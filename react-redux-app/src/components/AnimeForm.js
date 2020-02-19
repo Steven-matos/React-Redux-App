@@ -43,7 +43,7 @@ const AnimeForm = (props) => {
                 <Button
                 onClick = { handleFetchData }
                 variant = "contained"
-                color = "primary"
+                color= "default"
                 className = {classes.button}
                 endIcon={<Icon>send</Icon>}
                 > Send for Data </Button>
