@@ -3,10 +3,12 @@ import {createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import thunk from 'redux-thunk';
 
+import {animeReducer} from './reducers/animeReducer';
+
 import AnimeForm from './components/AnimeForm';
 import './App.css';
 
-const store = createStore(applyMiddleware(thunk));
+const store = createStore(animeReducer, applyMiddleware(thunk));
 
 function App() {
   return (
