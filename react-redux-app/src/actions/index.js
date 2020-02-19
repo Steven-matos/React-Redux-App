@@ -15,4 +15,4 @@ export const getData = () => dispatch =>{
         console.error(err.response);
         dispatch({ type: SET_ERROR, payload: "error fetching data from API!" });
     })
-}
+};

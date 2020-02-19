@@ -16,9 +16,8 @@ const Buttons = makeStyles(theme => ({
 
 const progressBar = makeStyles(theme => ({
     root: {
-        display: 'flex',
         '& > * + *': {
-            marginLeft: theme.spacing(2),
+            margin: '0 auto',
         },
     },
 }));
