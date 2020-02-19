@@ -8,8 +8,8 @@ export const getData = () => dispatch =>{
     dispatch({ type: FETCH_DATA });
     axios.get('https://api.jikan.moe/v3/top/anime/1')
     .then(res => {
-        console.log(res.data);
-        dispatch({ type: UPDATE_ANIMES, payload: res.data })
+        console.log(res.data.top);
+        dispatch({ type: UPDATE_ANIMES, payload: res.data.top })
     })
     .catch(err => {
         console.error(err.response);
