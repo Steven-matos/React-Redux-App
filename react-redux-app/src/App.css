@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #34222e;
+}
+
+.App {
+  text-align: center;
+}
+
+.App h1 {
+  color: white;
+}
+
+.error {
+  color: tomato;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3rem
+}
